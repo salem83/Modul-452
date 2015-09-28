@@ -24,4 +24,11 @@ sub remove {
     return shift @{$self->{schlange}};
 }
 
+# Anzahl Elemente
+sub length {
+    my $self = shift;
+
+    return scalar @{$self->{schlange}};
+}
+
 1;

@@ -38,6 +38,7 @@ get '/aufrufen' => sub {
         vorname  => '',
         nachname => '',
         alter    => '',
+        laenge   => $schlange->length(),
     );
 
     if ( $self->param('aufruf') ){
@@ -93,11 +94,13 @@ __DATA__
 <h1>Aufrufen</h1>
 <form action="/aufrufen">
 <input type="submit" name="aufruf"  value="Person aufrufen">
+</form> 
 <h2>Nächste Person</h2>
 <table border=0>
 <tr><td>Vorname</td><td><%= $vorname %></td></tr>
 <tr><td>Nachname</td><td><%= $nachname %></td></tr>
 <tr><td>Alter</td><td><%= $alter %></td></tr>
-</form> 
+</table>
+Anzahl Personen in der Schlange: <%= $laenge %>
 </body>
 </html>
