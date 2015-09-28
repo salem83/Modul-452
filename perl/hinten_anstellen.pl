@@ -74,7 +74,7 @@ __DATA__
 <!DOCTYPE html>
 <html lang="de"><head>
  <meta charset="utf-8">
- <title>Aufrufen</title>
+ <title>Anstellen</title>
  <style> table, td, th { border: 0px solid black; } </style>
 </head>
 <body>
