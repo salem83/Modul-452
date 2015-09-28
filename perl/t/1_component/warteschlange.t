@@ -16,6 +16,6 @@ $fifo = Warteschlange->new();
 $fifo->add('A');
 $fifo->add('B');
 $fifo->add('C');
-my $a = $fifo->remove();
+$a = $fifo->remove();
 is($a, 'A', 'three items');
 
