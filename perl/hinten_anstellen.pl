@@ -65,8 +65,8 @@ __DATA__
 <body>
 <h1>Hinten Anstellen</h1>
 <ul>
-<li><a href="/anstellen">Anstellen</li>
-<li><a href="/aufrufen">Aufrufen</li>
+<li><a href="/anstellen">Anstellen</a></li>
+<li><a href="/aufrufen">Aufrufen</a></li>
 </body>
 </html>
 
