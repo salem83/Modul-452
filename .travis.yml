@@ -1,12 +1,12 @@
-before_script: cd perl
+before_install: cd perl
 branches:
   except:
     - gh-pages
 language: perl
 sudo: false
 perl:
-  - "blead"
-  - "5.20"
+#  - "blead"
+#  - "5.20"
   - "5.18"
 before_install:
   - eval $(curl https://travis-perl.github.io/init) --auto
