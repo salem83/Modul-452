@@ -33,7 +33,7 @@ $mech->get( 'http://127.0.0.1:3000/aufrufen' );
 # Hans ist an der Reihe ;-)
 like ($mech->content(), qr/115/, 'Reih+Ordnung');
 
-for my $i (1..2) {
+for my $i (1901..2015) {
     # next please!
     $mech->click_button ( value => 'Person aufrufen');
 }
