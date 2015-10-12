@@ -5,10 +5,9 @@ language: perl
 sudo: false
 perl:
 #  - "blead"
-#  - "5.20"
+  - "5.20"
   - "5.18"
 before_install:
   - cd perl
   - eval $(curl https://travis-perl.github.io/init) --auto
-
 
