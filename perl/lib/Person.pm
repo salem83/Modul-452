@@ -50,15 +50,20 @@ sub nachname {
 
 # Mit Argument:  Wert setzen
 # Ohne Argument: Wert auslesen
-sub alter {
+sub geburtsdatum {
     my $self = shift;
-    my $name = shift;
+    my $geb = shift;
 
-    if ($name) {
-        $self->{alter} = $name;
+    if ($geb) {
+        if ($geb =~ /^\d{1,2}\.\d{1,2}\.\d{2,4}$/) {
+            $self->{geb} = $geb;
+        }
+        else {
+            return 0;
+        }
     }
     else {
-        return $self->{alter};
+        return $self->{geb};
     }
     return 1;
 }

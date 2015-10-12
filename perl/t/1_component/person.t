@@ -11,9 +11,9 @@ my $vorname = $person->vorname();
 is($vorname, 'Boris', 'setter/getter Vorname');
 
 $person = Person->new();
-$person->alter(1);
-my $alter = $person->alter();
-is($alter, 1, 'setter/getter Alter');
+$person->geburtsdatum('4.3.1990');
+my $geburtsdatum = $person->geburtsdatum();
+is($geburtsdatum, '4.3.1990', 'setter/getter Alter');
 
 $person = Person->new();
 $person->vorname('Olafdergrossemitdemlangenschwert');

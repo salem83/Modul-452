@@ -15,16 +15,16 @@ get '/anstellen' => sub {
 
     my $vname = $self->param('vorname');
     my $nname = $self->param('nachname');
-    my $alter = $self->param('alter');
+    my $geb = $self->param('geb');
 
-    if($vname and $nname and $alter) {
-        $self->app->log->debug("Steht an: '$vname, $nname, $alter'");
+    if($vname and $nname and $geb) {
+        $self->app->log->debug("Steht an: '$vname, $nname, $geb'");
 
         my $person = Person->new();
 
         $person->vorname($vname);
         $person->nachname($nname);
-        $person->alter($alter);
+        $person->geburtsdatum($geb);
 
         $schlange->add($person)
     }
@@ -37,7 +37,7 @@ get '/aufrufen' => sub {
     $self->stash(
         vorname  => '',
         nachname => '',
-        alter    => '',
+        geb      => '',
         laenge   => $schlange->length(),
     );
 
@@ -48,7 +48,7 @@ get '/aufrufen' => sub {
             $self->stash(
                 vorname  => $person->vorname(),
                 nachname => $person->nachname(),
-                alter    => $person->alter(),
+                geb      => $person->geburtsdatum(),
             );
         }
     }
@@ -83,7 +83,7 @@ __DATA__
 <table>
 <tr><td>Vorname:</td><td><input type="text" name="vorname" value=""></td></tr>
 <tr><td>Nachname:</td><td><input type="text" name="nachname" value=""></td></tr>
-<tr><td>Alter:</td><td><input type="text" name="alter" value=""></td></tr>
+<tr><td>Geburtsdatum:</td><td><input type="text" name="geb" value=""></td></tr>
 </table>
 <input type="submit" value="Absenden">
 </form> 
@@ -107,7 +107,7 @@ __DATA__
 <table>
 <tr><td>Vorname:</td><td><%= $vorname %></td></tr>
 <tr><td>Nachname:</td><td><%= $nachname %></td></tr>
-<tr><td>Alter:</td><td><%= $alter %></td></tr>
+<tr><td>Geburtsdatum:</td><td><%= $geb %></td></tr>
 </table>
 Anzahl Personen in der Schlange: <%= $laenge %>
 </body>
