@@ -1,3 +1,4 @@
+# ABSTRACT: This should never be on CPA
 package Warteschlange;
 
 # Konstruktor
