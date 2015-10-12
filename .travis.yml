@@ -1,4 +1,4 @@
-before_script: cd perl
+script: cd perl
 branches:
   except:
     - gh-pages
