@@ -1,4 +1,4 @@
-before_install: cd perl
+before_script: cd perl
 branches:
   except:
     - gh-pages
