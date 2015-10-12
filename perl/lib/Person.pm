@@ -40,7 +40,14 @@ sub nachname {
     my $name = shift;
 
     if ($name) {
-        $self->{nachname} = $name;
+        #              1-15 Buchstaben, ohne Zahlen
+        if ($name =~ /^[[:alpha:]]{1,15}$/) {
+            $self->{nachname} = $name;
+            return 1;
+        }
+        else {
+            return 0;
+        }
     }
     else {
         return $self->{nachname};

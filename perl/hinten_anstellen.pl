@@ -13,20 +13,28 @@ get '/' => {template => 'root'};
 get '/anstellen' => sub {
     my $self = shift;
 
+    $self->stash( errmsg  => '');
+
     my $vname = $self->param('vorname');
     my $nname = $self->param('nachname');
-    my $geb = $self->param('geb');
+    my $geb   = $self->param('geb');
 
     if($vname and $nname and $geb) {
         $self->app->log->debug("Steht an: '$vname, $nname, $geb'");
 
         my $person = Person->new();
 
-        $person->vorname($vname);
-        $person->nachname($nname);
-        $person->geburtsdatum($geb);
+        my $fail = '';
+        $fail .= 'Vorname falsch. '  unless ($person->vorname($vname));
+        $fail .= 'Nachname falsch. ' unless ($person->nachname($nname));
+        $fail .= 'Geb.dat. falsch. ' unless ($person->geburtsdatum($geb));
 
-        $schlange->add($person)
+        if ($fail) {
+            $self->stash( errmsg  => $fail)
+        }
+        else { 
+            $schlange->add($person)
+        }
     }
 
 } => 'anstellen';
@@ -87,6 +95,9 @@ __DATA__
 </table>
 <input type="submit" value="Absenden">
 </form> 
+<p>
+<%= $errmsg %>
+</p>
 </body>
 </html>
 

@@ -38,7 +38,7 @@ $mech->submit_form (
     fields      => {
                         vorname  => 'Hans',
                         nachname => 'Muster',
-                        alter    => '99',
+                        geb      => '1.2.1999',
     }
 );
 ok ($mech->success(), 'anstellen 1');
@@ -49,7 +49,7 @@ $mech->submit_form (
     fields      => {
                         vorname  => 'Gerta',
                         nachname => 'Knüppel',
-                        alter    => '1',
+                        geb      => '1.2.1999',
     }
 );
 ok ($mech->success(), 'anstellen 2');
