@@ -63,5 +63,5 @@ ok ($mech->click_button ( value => 'Person aufrufen'),'Person aufrufen');
 like ($mech->content(), qr/Hans/, 'Reih+Ordnung');
 
 # Gerta sollte noch anstehen
-like ($mech->content(), qr/Schlange: 1$/, 'Anz. Schlange');
+like ($mech->content(), qr/Schlange: 1/, 'Anz. Schlange');
 
