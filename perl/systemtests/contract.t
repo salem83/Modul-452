@@ -1,9 +1,7 @@
 use strict;
 use warnings;
 
-use Data::Dumper;
-
-use Test::More tests => 9;
+use Test::More tests => 10;
 
 use WWW::Mechanize;
 my $mech = WWW::Mechanize->new();
@@ -48,7 +46,7 @@ $mech->submit_form (
     form_number => 1,
     fields      => {
                         vorname  => 'Gerta',
-                        nachname => 'Knüppel',
+                        nachname => 'Knueppel',
                         geb      => '1.2.1999',
     }
 );
@@ -63,4 +61,7 @@ ok ($mech->click_button ( value => 'Person aufrufen'),'Person aufrufen');
 
 # Hans ist an der Reihe ;-)
 like ($mech->content(), qr/Hans/, 'Reih+Ordnung');
+
+# Gerta sollte noch anstehen
+like ($mech->content(), qr/Schlange: 1$/, 'Anz. Schlange');
 
