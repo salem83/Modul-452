@@ -57,6 +57,7 @@ get '/aufrufen' => sub {
                 vorname  => $person->vorname(),
                 nachname => $person->nachname(),
                 geb      => $person->geburtsdatum(),
+                laenge   => $schlange->length(),
             );
         }
     }
