@@ -3,7 +3,7 @@ use warnings;
 
 use Warteschlange;
 
-use Test::More tests => 4;
+use Test::More tests => 5;
 
 # Test to add one item and get it back
 my $fifo = Warteschlange->new();
@@ -31,3 +31,24 @@ $fifo->add('B');
 $fifo->add('C');
 $a = $fifo->length();
 is($a, '3', 'length 3');
+
+# Add a Mock
+{
+    package PersonMock;
+    sub new   { my $class = shift; bless \$class => $class }
+    sub vorname {
+        my $self = shift;
+        my $name = shift;
+        $self->{vorname} = $name if($name);
+        return $self->{vorname};
+    }
+}
+
+# Test to add one item and get it back
+my $fifo = Warteschlange->new();
+my $person_mock = PersonMock->new();
+$person_mock->vorname('abc');
+$fifo->add($person_mock);
+my $p = $fifo->remove();
+
+is($p->vorname(), 'abc', 'one item');
