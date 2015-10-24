@@ -35,7 +35,7 @@ is($a, '3', 'length 3');
 # Add a Mock
 {
     package PersonMock;
-    sub new   { my $class = shift; bless \$class => $class }
+    sub new   { my $class = shift; bless {}, $class }
     sub vorname {
         my $self = shift;
         my $name = shift;
@@ -45,10 +45,10 @@ is($a, '3', 'length 3');
 }
 
 # Test to add one item and get it back
-my $fifo = Warteschlange->new();
+$fifo = Warteschlange->new();
 my $person_mock = PersonMock->new();
 $person_mock->vorname('abc');
 $fifo->add($person_mock);
 my $p = $fifo->remove();
 
-is($p->vorname(), 'abc', 'one item');
+is($p->vorname(), 'abc', 'set-get mock');
