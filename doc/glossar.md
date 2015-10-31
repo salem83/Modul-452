@@ -1,8 +1,14 @@
 Glossar Modul 451
 =================
 
+Abnahmetest
+> TODO
+
 Äquivalenzklassen
 > Eingabedaten nach Bereichen einteilen welche vermutlich ein Ähnliches Verhalten hervorrufen. Beispiel: `[0], [1-199]`
+
+Box (black-, white-, grey)
+> TODO
 
 Fehlermaskierung
 > Ein Fehlerzustand wird durch andere Fehlerzustände oder spezifische Konfigurationen kaschiert und ist (momentan) nicht sichtbar.
@@ -12,6 +18,21 @@ Fehlerwirkung
 
 Fehlerzustand
 > Auch `Bug`. Fehler im Programm. Muss aber nicht nach aussen sichtbar sein!
+
+Funktionaler Test
+> TODO
+
+Integrationstest
+> TODO
+
+Kompontententest
+> TODO
+
+Nicht-Funktionaler Test
+> TODO
+
+Systemtest
+> TODO
 
 Testfall (konkreter)
 > Aufbauend auf logischem Testfall. Ordnet einen konkreten Eingabewert aus dem zulässigen Bereich einem zu erwarteten Ergebnis bzw. Ausgabe zu.
