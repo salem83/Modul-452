@@ -34,6 +34,9 @@ Kompontententest
 Nicht-Funktionaler Test
 > TODO
 
+Regressionstest
+> TODO
+
 Systemtest
 > TODO
 
