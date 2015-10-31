@@ -22,6 +22,9 @@ Fehlerzustand
 Funktionaler Test
 > TODO
 
+Grenzwertanalyse
+> TODO
+
 Integrationstest
 > TODO
 
