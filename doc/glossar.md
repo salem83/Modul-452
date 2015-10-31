@@ -14,7 +14,7 @@ Fehlerzustand
 > Auch `Bug`. Fehler im Programm. Muss aber nicht nach aussen sichtbar sein!
 
 Testfall (konkreter)
-> Aufbauen auf logischem testfall. Ordnet einen konkreten Eingabewert aus dem zulässigen Bereich einem zu erwarteten Ergebnis bzw. Ausgabe zu.
+> Aufbauend auf logischem Testfall. Ordnet einen konkreten Eingabewert aus dem zulässigen Bereich einem zu erwarteten Ergebnis bzw. Ausgabe zu.
 
 | EINGABE        | 0           | 42  |
 | ------------- |:-------------:| -----:|
@@ -26,3 +26,9 @@ Testfall (logischer)
 | EINGABE        | 0           | 1-199  |
 | ------------- |:-------------:| -----:|
 | AUSGABE      | false | true |
+
+Testkonzept
+> Strategisches bindendes Papier zum Vorgehen betreffend Testen im Projekt.
+
+Testtreiber
+> Software welche das ausführen von Tests ermöglicht (phpUnit, JUnit, xUnit, perl-prove).
