@@ -1,4 +1,4 @@
-package Warteschlange;
+package warteschlange;
 
 public class Person {
 
@@ -12,12 +12,12 @@ public class Person {
         this.alter = alter;
     }
 
-    public Boolean set_vorname(String vorname) {
+    public Boolean setVorname(String vorname) {
         this.vorname = vorname;
         return true;
     }
 
-    public String get_vorname() {
+    public String getVorname() {
         return this.vorname;
     }
 }
