@@ -2,10 +2,13 @@ Glossar Modul 451
 =================
 
 Abnahmetest
-> TODO
+> Formales Testen hinsichtlich der Benutzeranforderungen und -bedürfnisse bzw. der Geschäftsprozesse. Es wird durchgeführt, um einem Auftraggeber oder einer bevollmächtigten Instanz die Entscheidung auf der Basis der Abnahmekriterien zu ermöglichen, ob ein System anzunehmen ist oder nicht. [Nach IEEE 610]
 
 Äquivalenzklassen
 > Eingabedaten nach Bereichen einteilen welche vermutlich ein ähnliches Verhalten hervorrufen. Beispiel: `[0], [1-199]`
+
+Black-Box-Test
+> Funktionales oder nicht-funktionales Testen ohne Nutzung von Informationen über Interna eines Systems oder einer Komponente.
 
 Box (black-, white-, grey)
 > TODO
@@ -26,10 +29,10 @@ Funktionaler Test
 > TODO
 
 Grenzwertanalyse
-> TODO
+> Ein Black-Box-Testentwurfsverfahren, bei dem die Testfälle unter Nutzung von Grenzwerten entworfen werden. Siehe auch Grenzwert.
 
 Integrationstest
-> TODO
+> Testen mit dem Ziel, Fehlerzustände in den Schnittstellen und im Zusammenspiel zwischen integrierten Komponenten aufzudecken. Siehe auch Komponentenintegrationstest, Systemintegrationstest.
 
 Kompontententest
 > TODO
