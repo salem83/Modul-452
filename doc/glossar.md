@@ -10,6 +10,9 @@ Abnahmetest
 Box (black-, white-, grey)
 > TODO
 
+Fehlerklasse
+> TODO
+
 Fehlermaskierung
 > Ein Fehlerzustand wird durch andere Fehlerzustände oder spezifische Konfigurationen kaschiert und ist (momentan) nicht sichtbar.
 
