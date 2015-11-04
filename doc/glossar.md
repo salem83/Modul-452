@@ -59,3 +59,6 @@ Testkonzept
 
 Testtreiber
 > Software welche das ausführen von Tests ermöglicht (phpUnit, JUnit, xUnit, perl-prove).
+
+zustandsbezogener Test
+> TODO
