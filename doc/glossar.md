@@ -35,16 +35,16 @@ Integrationstest
 > Testen mit dem Ziel, Fehlerzustände in den Schnittstellen und im Zusammenspiel zwischen integrierten Komponenten aufzudecken. Siehe auch Komponentenintegrationstest, Systemintegrationstest.
 
 Kompontententest
-> TODO
+> Auch Unit Test genant. Eine Komponennte/Klasse wird isoliert von den anderen getestet. Falls eine Instanz einer anderen Klasse benötigt wird, muss hierzu ein Stub erstellt werden.
 
 Nicht-Funktionaler Test
-> TODO
+> Hierbei werden Attribute wie Effizienz, Stabilität, Benutzbarkeit, Änderbarkeit/Wartbarkeit, Lasttest, Robustheit, Kompatibilität, Dokumentation geprüft.
 
 Regressionstest
-> TODO
+> Bei einem Regressionstest werden Testresultate historisch verglichen. Dies um zu prüfen ob eine Änderung keine auswirkung auf andere Komponenten hat.
 
 Systemtest
-> TODO
+> Gesamt System (End-System: UI, externen Schnittstellen, Betriebssystem, 3rd Party, SW als laufender Prozess) wird unter spezifischen Gesichtspunkten (Funktionalität (UseCases, Pflichtenheft) Nicht Funktional (Lasttest, Performance, Speicherverhalten, ...) getestet.
 
 Testfall (konkreter)
 > Aufbauend auf logischem Testfall. Ordnet einen konkreten Eingabewert aus dem zulässigen Bereich einem zu erwarteten Ergebnis bzw. Ausgabe zu.
