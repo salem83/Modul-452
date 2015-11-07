@@ -46,6 +46,9 @@ Regressionstest
 Systemtest
 > Gesamt System (End-System: UI, externen Schnittstellen, Betriebssystem, 3rd Party, SW als laufender Prozess) wird unter spezifischen Gesichtspunkten (Funktionalität (UseCases, Pflichtenheft) Nicht Funktional (Lasttest, Performance, Speicherverhalten, ...) getestet.
 
+Testfall
+> TODO
+
 Testfall (konkreter)
 > Aufbauend auf logischem Testfall. Ordnet einen konkreten Eingabewert aus dem zulässigen Bereich einem zu erwarteten Ergebnis bzw. Ausgabe zu.
 
@@ -59,6 +62,9 @@ Testfall (logischer)
 | EINGABE        | 0           | 1-199  |
 | ------------- |:-------------:| -----:|
 | AUSGABE      | false | true |
+
+Testfallmatrix
+> TODO
 
 Testkonzept
 > Strategisches bindendes Papier zum Vorgehen betreffend Testen im Projekt.
